@@ -7,7 +7,13 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "type-check": "turbo type-check",
-    "clean": "turbo clean"
+    "test": "turbo test",
+    "test:watch": "turbo test:watch",
+    "test:coverage": "turbo test:coverage",
+    "format": "turbo format",
+    "format:check": "turbo format:check",
+    "clean": "turbo clean",
+    "qa": "pnpm format:check && pnpm lint && pnpm type-check && pnpm test"
   },
   "devDependencies": {
     "turbo": "latest",
