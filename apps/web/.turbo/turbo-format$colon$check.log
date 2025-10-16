@@ -1,0 +1,7 @@
+
+
+> web@0.1.0 format:check /home/bvelarde/research-agent/apps/web
+> prettier --check .
+
+Checking formatting...
+.prettierignore[2K[1G.prettierrc[2K[1G.turbo/turbo-format$colon$check.log[2K[1G.turbo/turbo-lint.log[2K[1G.turbo/turbo-test.log[2K[1G.turbo/turbo-type-check.log[2K[1Gcomponents.json[2K[1Geslint.config.js[2K[1Gnext-env.d.ts[2K[1Gnext.config.js[2K[1Gpackage.json[2K[1Gpostcss.config.js[2K[1Gsrc/app/globals.css[2K[1Gsrc/app/layout.test.tsx[2K[1Gsrc/app/layout.tsx[2K[1Gsrc/app/page.test.tsx[2K[1Gsrc/app/page.tsx[2K[1Gsrc/components/research-interface.tsx[2K[1Gsrc/components/ui/badge.tsx[2K[1Gsrc/components/ui/button.tsx[2K[1Gsrc/components/ui/card.tsx[2K[1Gsrc/components/ui/input.tsx[2K[1Gsrc/components/ui/progress.tsx[2K[1Gsrc/components/ui/skeleton.tsx[2K[1Gsrc/components/ui/textarea.tsx[2K[1Gsrc/lib/utils.ts[2K[1Gtailwind.config.js[2K[1Gtsconfig.json[2K[1Gtsconfig.tsbuildinfo[2K[1Gvitest.config.ts[2K[1Gvitest.setup.ts[2K[1GAll matched files use Prettier code style!

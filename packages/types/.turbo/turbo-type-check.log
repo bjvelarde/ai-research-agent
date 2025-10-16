@@ -1,0 +1,5 @@
+
+
+> @research-agent/types@0.0.0 type-check /home/bvelarde/research-agent/packages/types
+> tsc --noEmit
+

@@ -1,0 +1,5 @@
+
+
+> web@0.1.0 lint /home/bvelarde/research-agent/apps/web
+> eslint . --report-unused-disable-directives --max-warnings 0
+

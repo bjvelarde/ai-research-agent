@@ -1,31 +1,35 @@
-import { describe, it, expect } from 'vitest'
-import { render, screen } from '@testing-library/react'
-import Home from './page'
+import { describe, it, expect } from 'vitest';
+import { render, screen } from '@testing-library/react';
+import Home from './page';
 
 describe('Home Page', () => {
   it('renders the main heading', () => {
-    render(<Home />)
-    
+    render(<Home />);
+
     const heading = screen.getByRole('heading', {
-      name: /🧠 AI Research Agent/i,
-    })
-    
-    expect(heading).toBeInTheDocument()
-  })
+      name: /AI Research Assistant/i,
+    });
 
-  it('renders the description text', () => {
-    render(<Home />)
-    
-    const description = screen.getByText(/Your intelligent research assistant/i)
-    
-    expect(description).toBeInTheDocument()
-  })
+    expect(heading).toBeInTheDocument();
+  });
 
-  it('renders the welcome message', () => {
-    render(<Home />)
-    
-    const welcomeMessage = screen.getByText(/Welcome! The research interface will be built here/i)
-    
-    expect(welcomeMessage).toBeInTheDocument()
-  })
-})
+  it('renders the research interface', () => {
+    render(<Home />);
+
+    const textarea = screen.getByPlaceholderText(
+      /What would you like to research/i
+    );
+    const button = screen.getByRole('button', { name: /Start Research/i });
+
+    expect(textarea).toBeInTheDocument();
+    expect(button).toBeInTheDocument();
+  });
+
+  it('renders feature cards', () => {
+    render(<Home />);
+
+    expect(screen.getByText('Multi-Source Search')).toBeInTheDocument();
+    expect(screen.getByText('AI Synthesis')).toBeInTheDocument();
+    expect(screen.getByText('Mobile Ready')).toBeInTheDocument();
+  });
+});
