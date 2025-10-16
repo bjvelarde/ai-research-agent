@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
+    "dev": "turbo dev", 
     "lint": "turbo lint",
     "type-check": "turbo type-check",
     "test": "turbo test",
@@ -13,11 +13,16 @@
     "format": "turbo format",
     "format:check": "turbo format:check",
     "clean": "turbo clean",
-    "qa": "pnpm format:check && pnpm lint && pnpm type-check && pnpm test"
+    "qa": "pnpm format:check && pnpm lint && pnpm type-check && pnpm test",
+    "dev:all": "concurrently \"pnpm dev\" \"cd apps/backend && ./start.sh\"",
+    "dev:backend": "cd apps/backend && ./start.sh",
+    "install:backend": "cd apps/backend && pip install -r requirements.txt",
+    "backend:venv": "cd apps/backend && python -m venv venv"
   },
   "devDependencies": {
     "turbo": "latest",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "concurrently": "^8.2.0"
   },
   "packageManager": "pnpm@8.15.0",
   "engines": {
